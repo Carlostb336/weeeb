@@ -1,0 +1,128 @@
+/*TERCERO BARCENAS CARLOS-MARTINEZ GONZALEZ JOSELIN AZUCENA*/
+body{
+
+    background-color: #CACFD2;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #16A085 ;
+    
+
+}
+header {
+    text-align: center;
+    padding: 20px;
+    
+
+}
+
+header img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto; 
+}
+
+header h1 {
+    font-size: 1.8em; 
+    margin-top: 10px;
+    color: #333;
+}
+
+/*header{
+    background-color: #333;
+    color: white;
+    padding: 20px;*/
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+.titulo-productos {
+    font-size: 2em; 
+    font-weight: bold;
+    color: #FF6600;
+    margin-bottom: 15px;
+    text-align: center;
+    display: block;
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px; 
+    margin: 15px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.producto {
+    background-color: #4C9B80;
+    padding: 10px; 
+    border-radius: 8px; 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    width: 180px; 
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: scale(1.05); 
+}
+
+.producto img {
+    width: 100%;
+    max-width: 140px; 
+    border-radius: 6px;
+}
+.producto h2 {
+    font-size: 1em;
+    margin: 8px 0;
+    color: #333;
+}
+.precio {
+    font-size: 1em; 
+    font-weight: bold;
+    color: #ff6600;
+}
+.boton-retorno {
+    background-color: #ff6600;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em; 
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.boton-retorno:hover {
+    background-color: #cc5200;
+    transform: scale(1.05);
+}
